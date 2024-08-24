@@ -24,7 +24,7 @@
         <!-- navbar section -->
          <div>    
             <nav>
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 max-w-[450px] lg:max-w-none w-full m-auto">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden rounded-full">
@@ -51,7 +51,7 @@
                       <li><a>Contact Us</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-2xl font-extrabold"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 bg-[#ABEF5F]">
+                  <a class="btn btn-ghost text-2xl font-extrabold ml-14 lg:ml-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 bg-[#ABEF5F]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                   </svg>
                    Rinterio</a>
@@ -65,12 +65,12 @@
                       <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="card bg-base-100 border p-1 lg:absolute lg:ml-[845px] mr-1 lg:mr-auto">
+                <div class="card bg-base-100 border p-1 lg:absolute lg:ml-[845px] mr-1 lg:mr-auto hidden lg:grid">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-full">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                       </svg>
                 </div>
-                <div class="card bg-base-100 border p-1 lg:absolute lg:ml-[885px]">
+                <div class="card bg-base-100 border p-1 lg:absolute lg:ml-[885px] hidden lg:grid">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-full p-0.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                       </svg>
@@ -152,8 +152,8 @@
 
       
       <!-- Floating card -->
-      <div class="bg-base-200 h-[350px] border border-base-200 hidden">
-        <div class="card bg-white max-w-6xl shadow-xl grid grid-cols-1 lg:grid-cols-4 place-items-center mx-auto mt-12 mb-[100px] pt-8">
+      <div class="bg-base-200 h-auto lg:h-[350px] border border-base-200">
+        <div class="card bg-white max-w-6xl shadow-xl grid grid-cols-1 lg:grid-cols-4 place-items-center mx-auto mt-3 mb-12 lg:mt-12 lg:mb-[100px] pt-8 w-80 lg:w-auto">
           <div>
             <figure>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -200,9 +200,6 @@
           </div>
         </div>
       </div>
-
-
-      
       <!-- Our work process -->
       <div class="text-center bg-base-200 m-auto">
         <a class="btn btn-ghost font-extrabold bg-white rounded-3xl px-4 py-0 my-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 rotate-45">
@@ -429,7 +426,7 @@
              <h1 class="text-5xl font-extrabold pb-6">Let’s Discuss Next Project</h1>
              <p class="text-[#737373] font-medium max-w-96 lg:max-w-2xl m-auto mb-10">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-center m-auto w-full max-w-[970px] mb-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-center px-2 m-auto w-full max-w-[970px] mb-10">
             <input type="text" placeholder="First Name*" class="input lg:py-7 w-full max-w-md rounded-[64px]" />
             <input type="text" placeholder="Last Name*" class="input lg:py-7 w-full max-w-md rounded-[64px]" />
             <input type="text" placeholder="Phone Number*" class="input lg:py-7 w-full max-w-md rounded-[64px]" />
@@ -438,7 +435,7 @@
           </div>
           <div class="flex justify-center m-auto">
             <div>
-              <a class="btn px-5 w-[450px] lg:w-[945px] max-w-[945px] rounded-[32px] bg-[#ABEF5F] text-xl font-extrabold">Send Mail <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 bg-black text-white">
+              <a class="btn px-5 w-60 lg:w-[945px] max-w-[945px] rounded-[32px] bg-[#ABEF5F] text-xl font-extrabold">Send Mail <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 bg-black text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
               </svg>
               </a>
@@ -447,7 +444,7 @@
         </div>
       </div>
     </main>
-    <footer class="bg-[#1C1C1C] h-[480px] mt-3 mb-2">
+    <footer class="bg-[#1C1C1C] h-[480px] mt-3">
       <div class="max-w-2xl m-auto text-center">
         <div>
           <a class="btn btn-ghost text-xl font-extrabold text-4xl text-white mt-12 lg:mt-16"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 bg-[#ABEF5F] text-black">
@@ -471,7 +468,7 @@
         </div>
         <div>
           <div>
-            <a class="btn py-0.5 border-none rounded-[32px] bg-[#ABEF5F] font-extrabold">Book Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 bg-black text-white">
+            <a class="btn py-0.5 w-60 mt-2 lg:mt-auto border-none rounded-[32px] bg-[#ABEF5F] font-extrabold">Book Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 rounded-xl p-1 bg-black text-white">
               <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
             </svg>
             </a>
